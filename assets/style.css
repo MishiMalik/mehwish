@@ -153,7 +153,10 @@ a[data-toggle="collapse"] {
   margin-top: -5px;
 }
 .lg-dec{
-  display: none;
+  display: none ;
+}
+.lg-desc-2{
+  display: none !important;
 }
 /* ---------------------------------------------------
     CONTENT STYLE
@@ -195,6 +198,6 @@ a[data-toggle="collapse"] {
 .gallery-card-text a{
   font-size: 16px;
   color: #854fee;
-
+  font-weight: 500;
   text-decoration: none;
 }

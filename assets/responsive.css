@@ -2,7 +2,7 @@
     MEDIAQUERIES
 ----------------------------------------------------- */
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     #sidebar {
       margin-left: -250px;
       position: relative;
@@ -19,7 +19,6 @@
       display: none;
     }
     .lg-dec{
-        display: block;
         width: fit-content !important;
     }
     .sidebar-header{
@@ -27,16 +26,24 @@
         display: flex;
         justify-content:flex-start;
         align-items: center;
+    }
+      
+
+      .lg-dec{
+        width: 100%;
+        justify-content:flex-start;
+        align-items: center;
+        display: flex ;
       }
+      
       .dispaly-picture img{
        
         margin-right: 10px;
       }
- }
-
- 
-@media (max-width: 500px) {
-    .navbar{
+      .portfolio{
+       margin-right: auto !important;
+      }
+      .navbar{
         padding: 15px 0px !important;
     }
     #sidebar {
