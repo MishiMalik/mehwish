@@ -128,7 +128,7 @@
         font-weight: 400;
       }
       .footer{
-        display: block;
+        display: flex;
       }
   .portfolio{
     display: none;
