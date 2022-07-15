@@ -112,6 +112,7 @@ a[data-toggle="collapse"] {
   color: white;
   position: relative;
   margin-left: 15px;
+  width: fit-content;
 }
 .main-heading::before{
   content: "";
@@ -149,10 +150,8 @@ a[data-toggle="collapse"] {
   top: 8px;
   left: -20px;
 }
-.skills a{
- color: white;
- text-decoration: none;
-}
+
+
 .skills p{
   font-size: 16px;
   color: white;
@@ -225,7 +224,7 @@ a[data-toggle="collapse"] {
   margin-top: 15px;
 }
 .about{
-   background:linear-gradient(to right bottom, rgba(132, 79, 238, 0.329), rgba(133, 79, 238, 0.5)), url('../assets/images/wallpaper.jpg');
+   background:linear-gradient(to right bottom, rgba(132, 79, 238, 0.329), rgba(132, 79, 238, 0.329)), url('../assets/images/wallpaper.jpg');
    height: 60vh;
    width: 100%;
    background-position: center;
@@ -250,4 +249,37 @@ a[data-toggle="collapse"] {
   width: 40px;
   margin: 0px 5px;
   background-color: #854fee;
+}
+.text{
+  color: #854fee !important;
+}
+.skills2{
+  display: none;
+}
+.skills2 li{
+  margin: 0px 20px;
+}
+.skills2 ul li::before{
+  content: "";
+  height: 7px;
+  width: 7px;
+  border-radius: 100%;
+  background-color: #854fee;
+  position:absolute;
+  top: 5px;
+  left: -15px;
+}
+.skills a{
+ color: white;
+ text-decoration: none;
+}
+.footer{
+  background-color: #854fee;
+  padding: 40px 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }

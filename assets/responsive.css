@@ -3,6 +3,21 @@
 ----------------------------------------------------- */
 
 @media (max-width: 991px) {
+    .side-bar-btn{
+        display: none;
+    }
+    .social-links{
+        display: flex !important;
+        justify-content:center!important;
+      }
+      .social-icon{
+        height: 30px;
+        width: 30px;
+        background-color: white;
+        margin: 5px;
+        border-radius: 100%;
+        
+      }
     .about{
         width: 100%;
         background-position: right;
@@ -11,6 +26,9 @@
         border-radius: 3px;
         height: 100%;
         padding: 50px 0px;
+     }
+     .skills2{
+        display: block;
      }
     #sidebar {
       margin-left: -250px;
@@ -91,7 +109,7 @@
         
       }
       .skills ul li{
-        font-size: 12px;
+        font-size: 14px;
         color: white;
         font-weight: 400;
         position: relative;
@@ -100,12 +118,12 @@
        font-size: 12px;
        }
        .skills p{
-         font-size: 12px;
+         font-size: 14px;
          color: white;
          font-weight: 400;
        }
        .skills a{
-        font-size: 12px;
+        font-size: 14px;
         color: white;
         font-weight: 400;
       }
