@@ -3,6 +3,15 @@
 ----------------------------------------------------- */
 
 @media (max-width: 991px) {
+    .about{
+        width: 100%;
+        background-position: right;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 3px;
+        height: 100%;
+        padding: 50px 0px;
+     }
     #sidebar {
       margin-left: -250px;
       position: relative;

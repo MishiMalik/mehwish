@@ -110,7 +110,22 @@ a[data-toggle="collapse"] {
   font-size: 18px;
   font-weight: 500;
   color: white;
-  
+  position: relative;
+  margin-left: 15px;
+}
+.main-heading::before{
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  height: 2px;
+  width: 11px;
+  margin: 0px 5px;
+  background-color: white;
+}
+.no-before::before{
+  display: none !important;
+
 }
 .skills{
   width: 100%;
@@ -200,4 +215,39 @@ a[data-toggle="collapse"] {
   color: #854fee;
   font-weight: 500;
   text-decoration: none;
+}
+
+/* about section */
+.about-section{
+  padding: 10px;
+  border: 1px solid #854fee;
+  border-radius: 3px;
+  margin-top: 15px;
+}
+.about{
+   background:linear-gradient(to right bottom, rgba(132, 79, 238, 0.329), rgba(133, 79, 238, 0.5)), url('../assets/images/wallpaper.jpg');
+   height: 60vh;
+   width: 100%;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   border-radius: 3px;
+}
+.portfolio-heading{
+  font-size: 18px;
+  font-weight: 500;
+  color: #854fee;
+  position: relative;
+  width: fit-content;
+  margin: 0px auto;
+}
+.portfolio-heading::before{
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -50px;
+  height: 2px;
+  width: 40px;
+  margin: 0px 5px;
+  background-color: #854fee;
 }
