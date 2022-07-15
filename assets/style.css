@@ -277,7 +277,6 @@ a[data-toggle="collapse"] {
   background-color: #854fee;
   padding: 40px 10px;
   text-align: center;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
