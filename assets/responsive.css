@@ -6,6 +6,8 @@
     #sidebar {
       margin-left: -250px;
       position: relative;
+      justify-content: center;
+      align-items: center;
     }
     .ml{
         margin-left: 0px;
