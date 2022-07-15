@@ -127,6 +127,9 @@
         color: white;
         font-weight: 400;
       }
+      .footer{
+        display: block;
+      }
   .portfolio{
     display: none;
   }
