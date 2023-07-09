@@ -1,0 +1,311 @@
+@import url(typography.css);
+
+body {
+  font-family: var(--secondary-font);
+}
+.sidebar-div {
+  width: 220px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--secondry);
+  height: 100vh;
+  overflow-y: auto;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  height: 100%;
+}
+.sidebar .dp {
+  height: 200px;
+  clip-path: polygon(54% 0, 100% 0, 100% 86%, 51% 100%, 0 87%, 0 0);
+  overflow: hidden;
+  width: auto;
+}
+.menu-side {
+  text-align: center;
+}
+.menu-side li {
+  margin-bottom: 15px;
+}
+.menu-side li a {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.menu-side li a:hover {
+  color: var(--primary) !important;
+}
+.active-menu {
+  color: var(--primary) !important;
+}
+
+/* ========================================================main-side */
+.main-div {
+  width: calc(100% - 220px);
+  margin-left: auto;
+  padding: 0px 0px;
+}
+.hero-section img {
+  height: 100vh;
+  width: 100%;
+}
+.text-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.typewriter .textt {
+  color: #fff !important;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #4748a8; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: typing 5s steps(30, end) infinite,
+    blink-caret 0.5s step-end infinite;
+}
+
+.typewriter .texttt {
+  color: #fff !important;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #4748a8; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: typing 5s steps(30, end) infinite,
+    blink-caret 0.5s step-end infinite;
+}
+.typewriter .textttt {
+  color: #fff !important;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #4748a8; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: typing 5s steps(30, end) infinite,
+    blink-caret 0.5s step-end infinite;
+}
+
+/* ==============================================================about section */
+.about-img {
+  border: 1px solid var(--gray-text);
+  padding: 7px;
+  border-radius: 4px;
+}
+
+.about-img img {
+  border-radius: 4px;
+}
+
+/* ===============================================================service card */
+.service-card {
+  border: 1px solid var(--gray-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 20px 30px;
+}
+.service-card iconify-icon {
+  font-size: 50px;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+/* ==================================================================hire me */
+.hire-me {
+  background: linear-gradient(#000, #0000009c), url("/assets/images/pxfuel.jpg");
+  background-size: cover;
+  background-position: bottom;
+  height: 250px;
+}
+
+/* =============================================================footer */
+.footer {
+  background-color: #111111;
+}
+.footer iconify-icon {
+  color: var(--primary) !important;
+}
+.fb-icon {
+  background-color: white !important;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+.fb-icon iconify-icon {
+  color: #2f4678 !important;
+  font-size: 25px;
+}
+
+.linked-icon {
+  background-color: white !important;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+.linked-icon iconify-icon {
+  color: #005c8c !important;
+  font-size: 25px;
+}
+.git-icon {
+  background-color: white !important;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+.git-icon iconify-icon {
+  color: #5b457a !important;
+  font-size: 25px;
+}
+
+/* =====================================================grid */
+/* clear fix */
+.grid:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+.grid-sizer,
+.grid-item {
+  width: 25%;
+  padding: 5px;
+}
+@media only screen and (max-width: 767px) {
+  .grid-sizer,
+  .grid-item {
+    width: 50%;
+  }
+}
+
+.grid-item {
+  float: left;
+  border-radius: 10px;
+}
+.grid-img{
+  padding: 20px;
+  height: 220px;
+  width: 100%;
+  background-color: #edf2f7;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-item img {
+ height: 100%;
+ width: auto;
+ object-fit: contain;
+}
+
+.user-btn {
+  font-size: 20px;
+  color: white;
+}
+
+.filter-btns {
+  color: #6c6c6c;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 15px;
+  border-radius: 40px !important;
+  margin: 0px 5px;
+}
+/* .filter-btns:hover{
+  color: #6c6c6c;
+} */
+@media only screen and (max-width: 767px) {
+  .filter-btns {
+    font-size: 14px;
+  }
+}
+
+.filter-btns:hover {
+  color: #2d3748;
+  background: #edf2f7;
+}
+
+.active-category {
+  color: #2d3748;
+  background: #edf2f7;
+}
+
+.grid-item {
+  overflow: hidden;
+}
+
+.image-caption {
+  /* position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  left: 5px;
+  background-color: rgba(0, 0, 0, 0.803);
+  display: none;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  padding: 10px;
+  color: black;
+  cursor: pointer;
+  background-color:var(--gray-text) ;
+}
+
+
+ /* .image-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  color: white;
+  cursor: pointer;
+} */
+
+ .image-caption h2 {
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0px;
+}
+
+ .image-caption p {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+}
+
+/* =============================skilss */
+.progress{
+  height: 7px;
+}
+.progress-bar{
+  background-color: var(--primary);
+}
